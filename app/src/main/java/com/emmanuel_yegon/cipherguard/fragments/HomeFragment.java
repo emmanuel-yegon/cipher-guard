@@ -45,6 +45,7 @@ public class HomeFragment extends Fragment {
         txtEncrypt = binding.txtEncrypt;
         txtDecrypt = binding.txtDecrypt;
 
+
         btnEncrypt = binding.btnEncrypt;
         btnDecrypt = binding.btnDecrypt;
 

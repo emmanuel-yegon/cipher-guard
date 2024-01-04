@@ -1,14 +1,232 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".fragments.AboutUsFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="About Us" />
+        android:orientation="vertical">
 
-</FrameLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:background="#B8B8B8"
+            android:paddingTop="5dp"
+            android:text="Contact us:"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="20dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp">
+
+            <ImageView
+                android:id="@+id/imgYoutube"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".08"
+                android:src="@drawable/youtube" />
+
+            <ImageView
+                android:id="@+id/imgInstagram"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".08"
+                android:src="@drawable/instagram" />
+
+            <ImageView
+                android:id="@+id/imgTwitter"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".08"
+                android:src="@drawable/twitter" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:background="#B8B8B8"
+            android:padding="5dp"
+            android:text="For Business Enquiry:"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/txtEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:text="kptooman@gmail.com"
+            android:textAlignment="center"
+            android:textColor="#003B55"
+            android:textSize="25dp"
+            android:textStyle="bold|italic" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:background="#B8B8B8"
+            android:padding="5dp"
+            android:text="Website:"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/txtWebsiteUrl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:text="https://github.com/emmanuel-yegon"
+            android:textAlignment="center"
+            android:textColor="#003B55"
+            android:textSize="25dp"
+            android:textStyle="bold|italic" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="#FF0000"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="Rate us on play store"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="23dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_star" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_star" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_star" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_star" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_star" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:background="#B8B8B8"
+            android:padding="5dp"
+            android:text="Service we provide:"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="20dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:background="#9CF69A"
+            android:padding="5dp"
+            android:text="I develop projects in different languages framework and technology\n\n
+             Desktop Applications(Java Swing,JavaFX)\n\n
+             Android Applications(Java, Kotlin) \n\n
+             REST API's(spring boot Java)\n\n
+             Contact me for project inquiry"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="20dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="#28FFDF"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:textAlignment="center"
+                android:textStyle="bold|italic"
+                android:paddingTop="10dp"
+                android:layout_marginEnd="5dp"
+                android:text="Developed by:"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:background="#28FFDF"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="32dp"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:paddingTop="10dp"
+                android:layout_marginEnd="5dp"
+                android:text="ETech  Horizons"/>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>
