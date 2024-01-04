@@ -83,7 +83,7 @@ public class AboutUsFragment extends Fragment {
                 Intent intent = new Intent();
                 intent.setAction(Intent.ACTION_VIEW);
                 intent.addCategory(Intent.CATEGORY_BROWSABLE);
-                intent.setData(Uri.parse("https://www.instagram.com/manuyegon254/"));
+                intent.setData(Uri.parse("https://www.instagram.com/manuyegon254/1234"));
                 startActivity(intent);
             }
         });

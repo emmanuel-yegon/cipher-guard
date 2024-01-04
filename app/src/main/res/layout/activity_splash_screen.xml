@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SplashScreen">
+
+    <ImageView
+        android:id="@+id/appIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:src="@drawable/cipher1" />
+
+    <TextView
+        android:id="@+id/txtAppName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/appIcon"
+        android:layout_centerInParent="true"
+        android:text="Cipher"
+        android:textColor="@color/black"
+        android:textSize="45dp"
+        android:textStyle="bold|italic" />
+
+    <TextView
+        android:id="@+id/txtFrom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtAppName"
+        android:layout_marginTop="55dp"
+        android:text="from"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/txtETechHorizons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtFrom"
+        android:text="ETech Horizons"
+        android:textAlignment="center"
+        android:textColor="#085A5A"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>
