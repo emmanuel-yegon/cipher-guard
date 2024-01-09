@@ -56,7 +56,7 @@ public class SecretChangeFragment extends Fragment {
         btnSaveKey.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String keyText = txtKey.getText().toString();
+                String keyText = txtKey.getText().toString(); //retrieve the keyText entered in texKey EditText
                 if (isValidPassword(keyText)) {
                     saveKey(keyText);
                     txtWarning.setVisibility(View.GONE);

@@ -48,7 +48,6 @@ public class MessagesFragment extends Fragment {
         binding = FragmentMessagesBinding.inflate(inflater, container, false);
 
         relativeLayout = binding.layoutMessage;
-
         recyclerView = binding.rvMessage;
         txtSearch = binding.txtSearch;
 
@@ -69,12 +68,13 @@ public class MessagesFragment extends Fragment {
             @Override
             public void onTextChanged(CharSequence s, int start, int before, int count) {
                 tempList = new ArrayList<>();
+
                 for (int data = 0; data < messageList.size(); data++) {
-                    if (messageList.get(data).getPlain_text().toLowerCase().startsWith(txtSearch.getText().toString().toLowerCase
-                            ())) {
+                    if (messageList.get(data).getPlain_text().toLowerCase().startsWith(txtSearch.getText().toString().toLowerCase())) {
                         tempList.add(messageList.get(data));
                     }
                 }
+
 
                 recyclerView.setHasFixedSize(true);
                 recyclerView.setLayoutManager(new StaggeredGridLayoutManager(1, LinearLayoutManager.VERTICAL));

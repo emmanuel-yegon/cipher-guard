@@ -59,11 +59,13 @@ public class FingerPrintAuthenticator {
             @Override
             public void onAuthenticationFailed() {
                 super.onAuthenticationFailed();
-                Toast.makeText(context,"Authentication failed",Toast.LENGTH_SHORT).show();
+                Toast.makeText(context, "Authentication failed", Toast.LENGTH_SHORT).show();
             }
         });
 
-        promptInfo = new BiometricPrompt.PromptInfo.Builder().setTitle("Validation").setDescription("Use FingerPrint to Login")
+        promptInfo = new BiometricPrompt.PromptInfo.Builder()
+                .setTitle("Validation")
+                .setDescription("Use FingerPrint to Login")
                 .setDeviceCredentialAllowed(true).build();
         biometricPrompt.authenticate(promptInfo);
 

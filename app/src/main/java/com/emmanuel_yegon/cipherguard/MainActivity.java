@@ -66,7 +66,7 @@ public class MainActivity extends AppCompatActivity {
                         ((Activity)MainActivity.this).finish();
                         System.exit(0);
                     }else {
-                        Toast.makeText(MainActivity.this,"Phone doesn't contain passwordd",Toast.LENGTH_SHORT).show();
+                        Toast.makeText(MainActivity.this,"Phone doesn't contain password",Toast.LENGTH_SHORT).show();
                     }
                 }
             };
@@ -114,6 +114,7 @@ public class MainActivity extends AppCompatActivity {
 
         FragmentManager fragmentManager = getSupportFragmentManager();
         FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+
         if (flag) {
             fragmentTransaction.add(R.id.container, fragment);
         } else {
